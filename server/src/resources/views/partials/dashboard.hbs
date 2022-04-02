@@ -1,4 +1,4 @@
-{{#if home}}
+
 <div class="banner-left">
     <div class="choose">  
         <ul>
@@ -8,12 +8,18 @@
                     <span class="title">Web Enterprise</span>
                 </a>
             </li>
-<!--            <li>-->
-<!--                <a href="#">-->
-<!--                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>-->
-<!--                    <span class="title" onclick="profileList()">Profile</span>-->
-<!--                </a>-->
-<!--            </li>-->
+            <h2>Public</h2>
+            <li>
+                <a href="#">
+                    <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                    <span class="title" onclick="questionList()">Ideas</span>
+                </a>
+            </li>
+            {{#if home}}
+                <a href="/auth/loginPage">
+                    <button class="loginBtn">Login</button>
+                </a>
+            {{/if}}
             {{#ifCond check "===" "admin"}}
             <h2>Admin</h2>
             <li>
@@ -134,12 +140,43 @@
                     <span class="title" id="login" onclick="login()">Login</span>
                 </a>
             </li> --}}
-            <a href="/auth/loginPage">
-                <button class="loginBtn">Login</button>
-            </a>
         </ul>
     </div>
-</div>  
-{{/if}}
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+            <div class="search">
+                <label class="search-box">
+                    <input class="box-search" type="text" placeholder="Search here">
+                    <ion-icon name="search-outline"></ion-icon>
+                </label>
+            </div>
+        </div>
+        <div class="content">
+            <div id="listquestion">   
+                {{#each ideas}}
+                <div class="list-idea">
+                    <a href="/idea/detail/{{this._id}}" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">{{this.title}}</h5>
+                            <small class="text-muted">Time</small>
+                        </div>
+                        <small class="text-muted">Reaction.</small>
+                    </a>
+                </div>
+                <br>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div> 
+<script>
+    let question = document.getElementById('listquestion');
+    function questionList(){
+        question.style.display="block";
+    }
+</script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
