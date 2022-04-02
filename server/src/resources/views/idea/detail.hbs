@@ -1,0 +1,51 @@
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">{{ideas.title}}</div>
+            </div>
+            <span class="badge bg-primary rounded-pill">Ask question</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <p>
+                    {{ideas.description}}
+                </p>
+<!--                <img class="rounded float-right" src="{{ideas.image}}">-->
+                <br>
+                <a href="{{ideas.file}}">{{ideas.file}}</a>
+            </div>
+        </li>
+    </ul>
+    <br>
+
+
+{{!Comment}}
+<form method="POST" action="/idea/{{ideas._id}}/comment" >
+<textarea class='form-control' name="content" placeholder="Comment"></textarea>
+ <br>
+  <button type="submit" class="btn btn-primary">Save</button>
+</form>
+
+{{!show comment}}
+{{#each ideas.comments}}
+<br>    
+<p>{{this.content}}</p>
+<br>
+{{/each}}
+</div>
+<div>
+
+
+
+
+</div>
+</div>
+
+
+
+ 
+
+
+
+
