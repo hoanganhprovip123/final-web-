@@ -1,31 +1,33 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif; }
+  font-family: "Ubuntu", sans-serif;
+}
 
 :root {
   --blue: #287bff;
   --white: #fff;
   --grey: #f5f5f5;
   --black1: #222;
-  --black2: #999; }
+  --black2: #999;
+}
 
 .banner-left {
   position: relative;
-  width: 100%; }
-
+  width: 100%;
+}
 h1 {
   color: var(--white);
   padding-top: 10px;
-  margin-bottom: 10px; }
-
+  margin-bottom: 10px;
+}
 .choose h2 {
   color: var(--white);
   padding-top: 30px;
-  padding-bottom: 10px; }
-
+  padding-bottom: 10px;
+}
 .choose {
   position: fixed;
   width: 300px;
@@ -33,9 +35,9 @@ h1 {
   background: var(--blue);
   border-left: 10px solid var(--blue);
   transition: 0.5s;
-  overflow: hidden; }
-
-.choose .loginBtn {
+  overflow: hidden;
+}
+.choose .loginBtn{
   padding: 10px 50px;
   border-radius: 8px;
   background-color: var(--blue);
@@ -45,54 +47,55 @@ h1 {
   position: absolute;
   margin-top: 500px;
   margin-left: 65px;
-  font-size: 20px; }
+  font-size: 20px;
+}
 
 .choose ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; }
-
+  width: 100%;
+}
 .choose ul li {
   position: relative;
   width: 100%;
   list-style: none;
   border-top-left-radius: 30px;
-  border-bottom-left-radius: 30px; }
-
+  border-bottom-left-radius: 30px;
+}
 .choose ul li:nth-child(1) {
   margin-bottom: 10px;
   pointer-events: none;
   font-size: 25px;
-  margin-top: 20px; }
-
+  margin-top: 20px;
+}
 .choose ul li:hover,
 .choose ul li.hovered {
-  background: var(--white); }
-
+  background: var(--white);
+}
 .choose ul li a {
   position: relative;
   display: block;
   width: 100%;
   display: flex;
   text-decoration: none;
-  color: var(--white); }
-
+  color: var(--white);
+}
 .choose ul li:hover a,
 .choose ul li.hovered a {
-  color: var(--blue); }
-
+  color: var(--blue);
+}
 .choose ul li a .icon {
   position: relative;
   display: block;
   min-width: 60px;
   height: 60px;
   line-height: 70px;
-  text-align: center; }
-
+  text-align: center;
+}
 .choose ul li a .icon ion-icon {
-  font-size: 1.75em; }
-
+  font-size: 1.75em;
+}
 .choose ul li a .title {
   position: relative;
   display: block;
@@ -100,11 +103,11 @@ h1 {
   height: 60px;
   line-height: 60px;
   text-align: start;
-  white-space: nowrap; }
-
+  white-space: nowrap;
+}
 .choose ul li a.lout {
-  margin-top: 30px; }
-
+  margin-top: 30px;
+}
 .choose ul li:hover a::before,
 .choose ul li.hovered a::before {
   content: "";
@@ -116,8 +119,8 @@ h1 {
   background: transparent;
   border-radius: 50%;
   box-shadow: 35px 35px 0 18px var(--white);
-  pointer-events: none; }
-
+  pointer-events: none;
+}
 .choose ul li:hover a::after,
 .choose ul li.hovered a::after {
   content: "";
@@ -129,18 +132,19 @@ h1 {
   background: transparent;
   border-radius: 50%;
   box-shadow: 35px -35px 0 18px var(--white);
-  pointer-events: none; }
-
+  pointer-events: none;
+}
 .main {
   position: absolute;
   width: calc(100% - 300px);
   left: 300px;
   min-height: 100vh;
   background: var(--white);
-  transition: 0.5s; }
-
-.main .content #listquestion {
-  display: none; }
+  transition: 0.5s;
+}
+.main .content #listquestion{
+  display: none;
+}
 
 .topbar {
   width: 100%;
@@ -148,8 +152,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px; }
-
+  padding: 0 10px;
+}
 .toggle {
   position: relative;
   top: 0;
@@ -159,17 +163,17 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 2.5em;
-  cursor: pointer; }
-
+  cursor: pointer;
+}
 .search {
   position: relative;
   width: 400px;
-  margin: 0 800px; }
-
+  margin: 0 800px;
+}
 .search label.seach-box {
   position: relative;
-  width: 50%; }
-
+  width: 50%;
+}
 .search label input.box-search {
   width: 100%;
   height: 40px;
@@ -179,13 +183,14 @@ h1 {
   border: 1px solid var(--black2);
   padding-left: 350px;
   font-size: 18px;
-  color: var(--black1); }
-
+  color: var(--black1);
+}
 .search label ion-icon {
   position: absolute;
   top: 10px;
   left: 10px;
-  font-size: 1.2em; }
-
+  font-size: 1.2em;
+}
 .main .content {
-  margin: 40px 30px 0 40px; } */
+  margin: 40px 30px 0 40px;
+}
