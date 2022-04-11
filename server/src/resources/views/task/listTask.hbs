@@ -1,10 +1,26 @@
+<div class="banner-left">
+    <div class="choose">  
+        <ul>
+            <li>
+                <a href="/main/show">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Web Enterprise</span>
+                </a>
+            </li>
+             <li>
+                <a href="/main/show">
+                    <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>
+                    <span class="title">Back to Main</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>  
 <div class="container">
     <div>
-        <h3>List Task</h3>
-        <a href="/task/trashTask">Restore</a>
-        <br>
+        <h3 style="color: rgb(221, 135, 135); font-weight: normal; font-size: 50px;margin-bottom: 20px; margin-left:550px">List Task</h3>
     </div>
-    <table class="table">
+    <table class="table" style="margin-left: 130px;">
         <thead class="thead-dark">
         <tr>
             <th scope="col">#</th>
@@ -43,6 +59,7 @@
         {{/each}}
         </tbody>
     </table>
+     <a href="/task/trashTask" style="padding: 10px 10px; background: 	#17a2b8; color: white; font-size: 15px; margin-left: 1150px;border-radius: 5px;border: 1px solid white;">Recycle</a>
 </div>
 
 
@@ -87,3 +104,5 @@
         }
     });
 </script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

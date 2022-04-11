@@ -1,8 +1,8 @@
-* {
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-.login {
+// * {
+//   box-sizing: border-box;
+//   font-family: sans-serif;
+// }
+#loginid {
   width: 320px;
   height: 450px;
   border: 1px solid rgb(212, 193, 193);
@@ -11,12 +11,12 @@
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
 }
-.login .form {
+#loginid .form {
   width: 100%;
   height: 100%;
   padding: 15px 25px;
 }
-.login .form h2 {
+#loginid .form h2 {
   color: rgb(221, 135, 135);
   text-align: center;
   font-weight: normal;
@@ -24,7 +24,7 @@
   margin-top: 60px;
   margin-bottom: 80px;
 }
-.login .form input {
+#loginid .form input {
   width: 100%;
   height: 40px;
   margin-top: 20px;
@@ -35,7 +35,7 @@
   border-radius: 5px;
   font-size: 14px;
 }
-.login .form input:focus {
+#loginid .form input:focus {
   border: 1px solid rgba(255, 255, 255, 0.8);
   outline: none;
 }

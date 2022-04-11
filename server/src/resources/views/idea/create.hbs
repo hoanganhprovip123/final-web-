@@ -1,3 +1,21 @@
+<div class="banner-left">
+    <div class="choose">  
+        <ul>
+            <li>
+                <a href="/main/show">
+                    <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                    <span class="title">Web Enterprise</span>
+                </a>
+            </li>
+             <li>
+                <a href="/main/show">
+                    <span class="icon"><ion-icon name="arrow-back-outline"></ion-icon></span>
+                    <span class="title">Back to Main</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div> 
 <div class="mt-4">
     <h3>Create Idea</h3>
 
@@ -10,7 +28,6 @@
             <label for="title">Title</label>
             <input type="text" class="form-control" id="title" name="title" required>
         </div>
-
         <div class="form-group">
             <label for="description">Description</label>
             <input type="text" class="form-control" id="description" name="description" required>
@@ -48,34 +65,33 @@
         </button>
 
 
-<!-- Modal -->
-  <!-- Modal -->
-<div class="modal fade" id="Addidea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Idea</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+        <!-- Modal -->
+      <div class="modal fade" id="Addidea" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add Idea</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <input type="checkbox" required name="term1" value="term1">
+                <label for="term1">You must enter complete data in the input fields.</label><br>
+                <input type="checkbox" required name="term1" value="term1">
+                <label for="term1">This idea cannot be updated or deleted after submission.</label><br>
+                <input type="checkbox" required name="term2" value="term2">
+                <label for="term2">You must choose your task correctly.</label><br>
+                <input type="checkbox" required name="term2" value="term2">
+                <label for="term2">Are you sure you want to submit this idea?</label><br>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">ADD</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-          <input type="checkbox" required name="term1" value="term1">
-          <label for="term1">You must enter complete data in the input fields.</label><br>
-          <input type="checkbox" required name="term1" value="term1">
-          <label for="term1">This idea cannot be updated or deleted after submission.</label><br>
-          <input type="checkbox" required name="term2" value="term2">
-          <label for="term2">You must choose your task correctly.</label><br>
-          <input type="checkbox" required name="term2" value="term2">
-          <label for="term2">Are you sure you want to submit this idea?</label><br>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">ADD</button>
-      </div>
-    </div>
-  </div>
-</div>
 
     </form>
 </div>
