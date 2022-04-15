@@ -11,7 +11,7 @@
 }
 .main .wrapper-coloured {
   padding-top: 30px;
-  margin-left: 370px;
+  margin-left: 200px;
 }
 article img {
   height: 10px;
@@ -19,7 +19,7 @@ article img {
 }
 .main #infor #content-home {
   color: black;
-  padding-left: 500px;
+  padding-left: 200px;
   padding-top: 40px;
 }
 .main #infor .wrapper-coloured h3{
@@ -94,7 +94,7 @@ h1 {
 }
 .choose ul li a {
   position: relative;
-  display: block;
+  //display: block;
   width: 100%;
   display: flex;
   text-decoration: none;
@@ -125,8 +125,9 @@ h1 {
   white-space: nowrap;
 }
 .choose ul li a.lout {
-  margin-top: 30px;
+  margin-top: 10px;
 }
+
 .choose ul li:hover a::before,
 .choose ul li.hovered a::before {
   content: "";
@@ -156,11 +157,14 @@ h1 {
 .main {
   position: absolute;
   width: calc(100% - 300px);
-  left: 350px;
+  //width: 1100px;
+  left: 300px;
   min-height: 100vh;
   background: var(--white);
   transition: 0.5s;
+  //margin-top: 20px;
 }
+  
 .main #listquestion, #infor, #loginid, #listAccount, #listTask, #createTask {
   display: none;
 }
@@ -209,7 +213,4 @@ h1 {
   top: 10px;
   left: 10px;
   font-size: 1.2em;
-}
-.main .content {
-  margin: 20px 30px 0 30px;
 }

@@ -20,10 +20,15 @@ class taskController {
 
   //[GET] /task/createTask
   async createTask(req, res, next) {
-    const categories = await Category.find({}).lean();
-    res.render('task/createTask', {
-      categories: categories,
-    });
+    res.render('task/createTask');
+  }
+
+  setDeadlineIdea(req, res, next) {
+    res.render('task/setDeadlineIdea');
+  }
+
+  setDeadlineCmt(req, res, next) {
+    res.render('task/setDeadlineCmt');
   }
 
   //[GET] /task/:id/updateTask
